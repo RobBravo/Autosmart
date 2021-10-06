@@ -318,7 +318,11 @@ a:hover {
 	cursor: text;
 	transition: all 0.2s ease;
 }
-
+.contact-bar{
+width: auto;
+height: 100px;
+position: absolute;
+}
 .form-control-input:focus + .label-control,
 .form-control-input.notEmpty + .label-control,
 .form-control-textarea:focus + .label-control,
@@ -474,7 +478,7 @@ input[type='checkbox'] {
 /**********************/
 .navbar {
 	border-bottom: 1px solid #e3e8ec;
-	background-color: #17B0CE;
+	background-color: #142e65;
 	font-weight: 600;
 	font-size: 1.2rem;
 	line-height: 0.975rem;
@@ -486,8 +490,8 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 100px;
-	height: 83px;
+    width: 150px;
+	height: 81px;
 }
 
 .navbar .logo-text {
@@ -500,7 +504,7 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 3.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
+	top: 6.25rem; /* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
 	width: 100%;
@@ -508,7 +512,7 @@ input[type='checkbox'] {
 	padding-left: 1rem;
 	overflow-y: auto;
 	visibility: hidden;
-	background-color: #ffffff;
+	background-color: #0c7735;
 	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -528,20 +532,40 @@ input[type='checkbox'] {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #fff;
+	color: #fff !important;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
 
 .navbar-light .navbar-nav .nav-link.active{
-	color: #fff;
+	color: #fff !important;
 }
 
 .navbar .nav-item.dropdown.show .nav-link,
 .navbar .nav-item .nav-link:hover {
-	color: #002252;
+	color: #0c7735 !important;
 }
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	background-image: url(../images/Hilux.jpg);
+	background-size: cover;
+  }
+  @media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+  }
 
+  .cover-img-carrusel img{
+	  width: 100%;
+	  height: auto;
+	  background-size: cover;
+	  background-attachment: fixed;
+  }
 /* Dropdown Menu */
 .navbar .dropdown .dropdown-menu {
 	animation: fadeDropdown 0.2s; /* required for the fade animation */
@@ -1268,7 +1292,7 @@ a:hover.back-to-top {
 	/* Navigation */
 	.navbar {
 		padding-top: 0.75rem;
-		background-color: #17B0CE;
+		background-color: #142e65;
 		border-bottom: none;
 		transition: all 0.2s;
 	}
@@ -1277,7 +1301,7 @@ a:hover.back-to-top {
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 		border-bottom: 1px solid #e3e8ec;
-		background-color: #17B0CE;
+		background-color: #142e65;
 	}
 
 	.offcanvas-collapse {
